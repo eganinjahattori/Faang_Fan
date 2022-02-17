@@ -1,7 +1,7 @@
-git pull origin master
+git pull origin main
 git add .
 git commit -m "added more topics"
-git push origin master
+git push origin main
 echo "=================="
 echo "=================="
 echo "=================="
