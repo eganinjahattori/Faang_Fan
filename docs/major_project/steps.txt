@@ -1,0 +1,9 @@
+ye humari pitch ke waqt bolenge, pehle explain krenge ki sls kya hota h, kyu better h, fir ye bataenge
+
+1. Learn how to implement a serverless architecture.
+2. Learn how to make it cloud independent and loosely coupled to a particular platform
+3. Implement the same script on a traditional server, compare the both infra on terms of cost, dependency of cost/dev-cost,etc. on code quality, and event driven
+programming.
+4. Implement job scrapping with scheduler on sls.
+5. Implement job updation with event driven programming on sls.
+6. Conclude the results of comparison of both infra.
