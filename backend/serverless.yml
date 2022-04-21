@@ -64,6 +64,18 @@ functions:
       - http:
           path: /
           method: get
+  amazonJob:
+    handler: scrappers/companies/amazon.handler
+    events:
+      - http:
+          path: /scrap/job/amazon
+          method: get
+  sendEmail:
+    handler: utilityLambdas/sendEmail.handler
+    events:
+      - http:
+          path: /email/send
+          method: get
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -118,3 +130,8 @@ functions:
 plugins:
   - serverless-offline
   # - serverless-aws-alias
+# serverless.yml
+custom:
+  webpack:
+    includeModules:
+      packagePath: './package.json' # relative path to custom package.json file.
